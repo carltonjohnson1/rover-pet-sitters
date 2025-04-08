@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Rover sample site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Rover.com: Book Dog Boarding Services</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="content-wrapper">
+        <nav>
+          <ul>
+            <div>
+              <li class="hide-on-mobile">
+                <a href="#">
+                  <picture>
+                    <img src="./img/logo.png" alt="Rover logo" />
+                  </picture>
+                </a>
+              </li>
+              <li class="hide-on-mobile">
+                <a href="#">Search Sitters</a>
+              </li>
+              <li class="hide-on-mobile">
+                <a href="#">Become a Sitter</a>
+              </li>
+              <li class="hide-on-mobile">
+                <a href="#">Our Services</a>
+              </li>
+            </div>
+            <div>
+              <li class="hide-on-mobile">
+                <dialog>
+                  <button autofocus>Close</button>
+                  <p>We'll be ready for sign ups soon!</p>
+                </dialog>
+                <button class="sign-up-but">Sign Up</button>
+              </li>
+              <li class="hide-on-mobile">
+                <a href="#">Sign in</a>
+              </li>
+              <li class="hide-on-mobile">
+                <a href="#">Help</a>
+              </li>
+              <li class="menu-button" onclick="showSidebar()">
+                <a href="#"
+                  ><img src="./img/hamburger.svg" alt="menu button"
+                /></a>
+              </li>
+            </div>
+          </ul>
+          <!-- mobile version below - below 600px-->
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"
+                ><img
+                  src="./img/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="close button"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">Search Sitters</a>
+            </li>
+            <li>
+              <a href="#">Become a Sitter</a>
+            </li>
+            <li>
+              <a href="#">Our Services</a>
+            </li>
+            <li>
+              <a href="#">Sign Up</a>
+            </li>
+            <li>
+              <a href="#">Sign in</a>
+            </li>
+            <li>
+              <a href="#">Help</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div>
+      <main>
+        <section>
+          <div class="hero" id="herochange">
+            <div class="content-wrapper">
+              <div class="hero-text">
+                <h1 id="people">We're The Dog People</h1>
+
+                <p>
+                  Book trusted, local pet sitters and walkers who will care for
+                  your dog or cat like you would
+                </p>
+              </div>
+              <div class="btn" id="search">Search</div>
+            </div>
+          </div>
+        </section>
+        <article>
+          <div class="content-wrapper">
+            <section>
+              <h2 class="txt-center">Services for every dog and cat</h2>
+              <div class="services-flex">
+                <div class="services-list">
+                  <ul>
+                    <li>
+                      <div class="service-list-div">
+                        <div class="service-icon">
+                          <img src="./img/suitcase.png" alt="suitcase icon" />
+                        </div>
+                        <div class="service-text">
+                          <h3 id="dog">Dog Boarding</h3>
+                          <p>Perfect if you need overnight care.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="service-list-div">
+                        <picture class="service-icon">
+                          <img src="./img/house.png" alt="house icon" />
+                        </picture>
+                        <div class="service-text">
+                          <h3 id="house">House Sitting</h3>
+                          <p>
+                            Great if you need overnight pet or house-sitting
+                            services.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="service-list-div">
+                        <picture class="service-icon">
+                          <img src="./img/paws.png" alt="dog paws icon" />
+                        </picture>
+                        <div class="service-text">
+                          <h3 id="walking">Dog Walking</h3>
+                          <p>Whenever your dog need a walk.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="service-list-div">
+                        <picture class="service-icon">
+                          <img src="./img/sun.png" alt="sun icon" />
+                        </picture>
+                        <div class="service-text">
+                          <h3 id="care">Doggy day care</h3>
+                          <p>
+                            Daytime daycare in your sitter's dog-friendly home
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="service-list-div">
+                        <picture class="service-icon">
+                          <img
+                            src="./img/food.png"
+                            alt="dog bowl with food in icon"
+                          />
+                        </picture>
+                        <div class="service-text">
+                          <h3 id="vists">Drop in visits</h3>
+                          <p>For check-ins and play dates</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="book-box">
+                  <div class="book-wrapper">
+                    <div class="book-grey-header">
+                      <picture
+                        ><img src="./img/shield.png" alt="sheild icon"
+                      /></picture>
+                      <p>Rover accepts less than 20% of potential sitters</p>
+                    </div>
+                    <div class="book-list-and-btn">
+                      <div class="book-ticks-list">
+                        <ul>
+                          <li>
+                            <div class="list-flex">
+                              <picture
+                                ><img src="./img/done_24px.svg" alt="tick icon"
+                              /></picture>
+                              <p>All sitters passed a background check</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="list-flex">
+                              <picture
+                                ><img src="./img/done_24px.svg" alt="tick icon"
+                              /></picture>
+                              <p>
+                                All sitters provided a detaiiled profile and
+                                personal information
+                              </p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="list-flex">
+                              <picture>
+                                <img src="./img/done_24px.svg" alt="tick icon"
+                              /></picture>
+                              <p>
+                                All sitters are approved by our team of sitter
+                                specialist
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="book-btn txt-center" id="sitter">
+                        Book your next Rover sitter
+                      </div>
+                    </div>
+                  </div>
+                  <p class="txt-center">
+                    All services booked on Rover are back by the Rover
+                    Guarenteed 24/7, Support, Photo Updates and our
+                    <a href="">Reservation Protection.</a>
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <section>
+            <div class="content-wrapper">
+              <div class="testimonial-with-img">
+                <div class="testimonial">
+                  <div class="green-line"></div>
+                  <p class="txt-testimonial">
+                    My Rover sitter send me updates throught the day and took
+                    care of the dog as if she were her own.
+                    <span>— Corinna F.</span>
+                  </p>
+                  <p class="learn-more">
+                    We're the Dog people. <a href="#">Learn more</a>
+                  </p>
+                </div>
+
+                <picture>
+                  <img
+                    src="./img/hero-2.webp"
+                    alt="person sitting on bench with two dogs on their lap"
+                    id="herobottom"
+                /></picture>
+              </div>
+            </div>
+          </section>
+          <div class="content-wrapper">
+            <section>
+              <h2 class="txt-center">
+                We’re the treat-your-dog-like-family dog people
+              </h2>
+
+              <div class="top">
+                <div class="flex-top">
+                  <picture>
+                    <img
+                      src="./img/watchglass.png"
+                      alt="watch glass search icon"
+                    />
+                  </picture>
+
+                  <div class="icon-text">
+                    <h3>Search</h3>
+                    <p>Read verified reviews and pick the perfect sitter.</p>
+                  </div>
+                </div>
+
+                <div class="flex-top">
+                  <picture>
+                    <img src="./img/phone.png" alt="mobile phone icon" />
+                  </picture>
+
+                  <div class="icon-text">
+                    <h3>Book & pay on Rover</h3>
+                    <p>
+                      Get the Rover Guarantee, 24/7 support, and reservation
+                      protection.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex-top">
+                  <picture>
+                    <img src="./img/shield.png" alt="shield icon" />
+                  </picture>
+
+                  <div class="icon-text">
+                    <h3>Relax</h3>
+                    <p>Book and pay securely through the website or app.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+      </main>
+    </div>
+
+    <!-- <script src="./js/main.js"></script> -->
+  </body>
+</html>
