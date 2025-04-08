@@ -1,0 +1,595 @@
+/*
+ * Lay this page out - make it responsive, flex, position and media queries where needed.
+ *
+ * Colors-
+ * Green: #14a96d
+ * White: #fff
+ * Light gray: #f4f5f6
+ * Border gray: #cfd7de
+ * Dark text: #1b1f23
+ * Lighter text: #66727c
+ * Blue for links: #06748a
+ * Blue for hovered links: #033641
+ */
+
+/* Globals */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #14a96d;
+  --white: #fff;
+  --light-gray: #f4f5f6;
+  --border-gray: #cfd7de;
+  --dark-text: #1b1f23;
+  --lighter-text: #66727c;
+  --blue-for-links: #06748a;
+  --blue-for-hovered-links: #033641;
+  --content-wrapper-width: 1170px;
+  --base-space: 1.25rem;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  font-size: 100%;
+  margin: 0;
+}
+
+a {
+
+  color: var(--blue-for-links);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--blue-for-hovered-links);
+}
+
+::backdrop {
+  background-color: var(--dark-text);
+  opacity: 0.80;
+}
+
+dialog {
+  background-color: white;
+  border: 0px;
+  text-align: center;
+  padding: 30px 20px;
+  width: 400px;
+}
+
+.sign-up-but {
+  background-color: rgba(0, 0, 0, 0.0);
+  display: inline-block;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  color: var(--blue-for-links);
+
+}
+
+.sign-up-but a {
+  color: var(--blue-for-links);
+  text-decoration: none;
+}
+
+button:hover {
+  color: var(--blue-for-hovered-links)
+} 
+
+
+
+
+img,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+picture {
+  display: block;
+}
+
+.content-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0rem 0.8rem;
+}
+
+header {
+
+  padding: 1rem 0rem;
+
+  picture {
+    max-width: 150px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--base-space);
+  }
+
+  nav ul > div {
+    display: flex;
+    align-items: center;
+    column-gap: var(--base-space);
+  }
+}
+
+
+
+.hero {
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 60vh;
+  margin-bottom: 3rem;
+
+}
+
+
+
+p {
+  color: var(--lighter-text)
+}
+
+
+
+.hero-text {
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+
+
+  p {
+    font-size: 1.375rem;
+    color: var(--dark-text);
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+ 
+}
+
+.btn {
+background-color: var(--green);
+color: white;
+display: inline-block;
+padding: 0.625rem 4.75rem;
+border-radius: 4px;
+text-align: center;
+
+}
+
+h1, h2, h3 {
+  color: var(--dark-text);
+}
+
+/* Services CSS below */
+
+.services-flex {
+display: flex;
+justify-content: space-between;
+margin-bottom: 4rem;
+margin-top: 3rem;
+}
+
+.services-list {
+max-width: 25rem;
+}
+
+.service-list-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+
+
+.service-icon {
+  max-width: 4rem;
+  padding-right: 1rem;
+}
+
+.service-text {
+  
+  h3 {
+    margin-bottom: 0rem;
+  }
+
+  p {
+    margin-top: 0.5rem;
+  }
+}
+
+.book-box {
+  max-width: 28rem;
+}
+
+.book-wrapper {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-gray);
+  border-radius: 4px;
+
+}
+
+
+
+.book-grey-header {
+
+  display: flex;
+  column-gap: 1rem;
+  background-color: var(--light-gray);
+  border-style: solid;
+  padding: 1rem;
+  border-color: var(--border-gray);
+  border-width: 1px;
+
+  img {
+    max-width: 3rem;
+  }
+}
+
+
+.book-ticks-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--lighter-text);
+  padding: 1rem;
+
+}
+/* 
+Not sure if I need this class
+.book-list-and-btn {
+
+} */
+
+.list-flex {
+display: flex;
+column-gap: 1rem;
+
+}
+
+.book-btn {
+  background-color: var(--green);
+  color: white;
+  padding: 0.625rem 4.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  
+
+}
+
+
+.services-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--lighter-text);
+
+}
+
+.txt-center {
+  text-align: center;
+}
+
+
+/* testimonial with image and icons CSS below */
+
+.icons-flex {
+  display: flex;
+  column-gap: 2.5rem;
+  margin-top: 3.125rem;
+  justify-content: space-between;
+  
+}
+
+
+
+.top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+column-gap: 2rem;
+
+}
+
+.flex-top {
+margin-top: 1rem;
+margin-bottom: 4rem;
+flex: 1;
+
+picture {
+  max-width: 5rem;
+margin: 0 auto;
+}
+h3 {
+  margin: 0;
+  margin-top: 2rem;
+}
+
+p {
+  margin-top: 0.5rem;;
+}
+
+}
+
+
+
+
+.testimonial-with-img{
+  position: relative;
+  margin-bottom: 3rem;
+ 
+}
+
+.testimonial {
+max-width: 25rem;
+background-color: var(--white);
+position: absolute;
+top: -1.5rem;
+left: 2.5rem;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding: 1.25rem;
+border-radius: 4px;
+
+span {
+  color: var(--lighter-text);
+  font-style: italic;
+}
+
+
+}
+
+.txt-testimonial {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  
+}
+
+
+.learn-more {
+ color: var(--dark-text);
+}
+
+.green-line {
+background-color: var(--green);
+border: 0;
+height: 0.20rem;
+width: 10%
+}
+
+.center-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.25rem;
+  max-width: 18rem;
+
+  img {
+    max-width: 4rem;
+  }
+
+}
+
+
+.menu-button {
+  display: none;
+} 
+
+.sidebar {
+  display: none;
+}
+
+
+/* break point 600px below 
+mobile breakpoint
+*/
+
+@media screen and (max-width: 600px) {
+
+  .sidebar {
+    position:fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .sidebar li {
+  
+    width: 100%
+  }
+  
+  .sidebar a {
+    width: 100%;
+  }
+  
+ 
+
+
+  .menu-button {
+    display: block;
+  }
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li{
+  height: 50px;
+  background-color: var(--white);
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+
+nav a:hover {
+  background-color: #f0f0f0;
+}
+
+nav li:first-child {
+
+  margin-right: auto;
+} 
+
+
+.hide-on-mobile {
+  display: none;
+}
+
+.hero {
+  background: none;
+  height: auto;
+  margin-bottom: 3rem;
+  
+h1 {
+  display: none;
+}
+
+.btn {
+display: block;
+
+}
+
+}
+
+.top {
+display: block;
+  padding: 0.5rem 0;
+
+}
+
+.flex-top {
+  display: flex;
+
+
+
+picture {
+  max-width: 3rem;
+  margin-right: 1rem;
+  margin-left: 0;
+
+ 
+}
+h3 {
+  margin: 0;
+}
+
+p {
+  margin-top: 0.5rem;;
+}
+
+}
+
+
+
+.services-flex {
+  display: block;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+
+.services-list {
+  max-width: 25rem;
+  }
+  
+  .service-list-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .service-icon {
+    max-width: 4rem;
+    padding-right: 1rem;
+  }
+
+  
+.book-box {
+  margin-top: 1rem;
+  max-width: 600px;
+}
+
+}
+
+
+
+.testimonial-with-img{
+  position: static;
+  margin-bottom: 3rem;
+ 
+
+}
+
+.testimonial {
+background-color: var(--white);
+position: static;
+width: 100%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding: 1.25rem;
+border-radius: 4px 4px 0px 0px;
+max-width: 600px;
+}
+  
+
+.icons-flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.125rem;
+
+  
+}
+
+
+.icon-text {
+text-align: left;
+
+}
+
+
+.center-div {
+
+  margin-bottom: 3.25rem;
+  max-width: 18rem;
+
+
+  }
+
+}
+
