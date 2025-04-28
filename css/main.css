@@ -37,6 +37,32 @@ body {
   margin: 0;
 }
 
+#search {
+  cursor: pointer;
+}
+
+#search:hover {
+background-color: #033641;
+}
+
+#search a {
+  color: var(--white);
+
+}
+
+#sitter {
+  cursor: pointer;
+}
+
+#sitter:hover {
+  background-color: #033641;
+  }
+  
+  #sitter a {
+    color: var(--white);
+  
+  }
+
 a {
   color: var(--blue-for-links);
   text-decoration: none;
